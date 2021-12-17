@@ -1,5 +1,9 @@
 /* Page Wrap */
 
+.container {
+  max-width: 1200px;
+}
+
 .mps-wrap-flex {
   position: relative;
   display: flex;
@@ -38,7 +42,7 @@
 
 .container {
   margin: 0 auto;
-  max-width: 992px; /* Medium devices (tablets, 768px and up) */
+  max-width: 1600px; /* Medium devices (tablets, 768px and up) */
 }
 
 .container:before,
@@ -96,8 +100,4 @@
   .container {
     max-width: none;
   }
-}
-
-.container {
-  max-width: 1400px;
 }
