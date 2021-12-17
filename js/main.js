@@ -15,7 +15,7 @@ d3.json('../data/categories.json').then(function (data) {
       div2.className = 'article-img';
 
       const a = document.createElement('a');
-      a.href = `./${elem.parent}/${elem.name}/`;
+      a.href = `./${elem.name}/`;
       const img = document.createElement('img');
       img.src = `./data/${elem.name}.png`;
       img.title = elem.name;
