@@ -1,0 +1,41 @@
+@import url('./article.css');
+@import url('./colors.css');
+@import url('./chart.css');
+@import url('./layout.css');
+@import url('./section.css');
+@import url('./typography.css');
+
+@charset 'UTF-8';
+
+:root {
+  --x-small: 576px !default;
+  --small: 768px !default;
+  --medium: 992px !default;
+  --large: 1200px !default;
+  --x-large: 1440px !default;
+
+  --mobile: --x-small !default;
+  --tablet: --small !default;
+  --desktop: --medium !default;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body,
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

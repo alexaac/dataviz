@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MapTheClouds Playground" />
+    <title>MapTheClouds - Blender Earth</title>
+
+    <link
+      rel="icon"
+      href="https://mps-ph.s3.us-east-2.amazonaws.com/ma/icons/icon.ico"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://mps-ph.s3.us-east-2.amazonaws.com/ma/icons/icon.ico"
+    />
+
+    <meta property="og:title" content="MapTheClouds Playground" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://maptheclouds.com/playground/blender-earth"
+    />
+    <meta property="og:description" content="MapTheClouds Playground" />
+    <meta property="article:publisher" content="https://maptheclouds.com" />
+    <meta property="article:section" content="Graphic" />
+    <meta property="article:tag" content="Graphic" />
+    <meta
+      property="og:image"
+      content="https://mps-ph.s3.us-east-2.amazonaws.com/ma/img/og_1200_630.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1400" />
+    <meta property="og:image:height" content="900" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:image"
+      content="https://mps-ph.s3.us-east-2.amazonaws.com/ma/img/og_1200_630.png"
+    />
+    <meta property="twitter:site" content="@maptheclouds" />
+
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+  </head>
+
+  <body>
+    <div class="mps-wrap-flex">
+      <main class="mps-flex">
+        <div class="title">
+          <h1>Earth in Blender</h1>
+          <h2>
+            Blender returns <span>🌎</span></h2>
+        </div>
+        <div class="description">
+          <p>Started to remake the Earth in Blender, after <a href="https://twitter.com/andrewpprice">@andrewpprice</a>'s <a href="https://www.youtube.com/watch?v=9Q8PwcDzb8Y">
+            tutorial</a> on YouTube.</p>
+        </div>
+        <article class="article-container container">
+
+          <section class="section">
+            <div class="container">
+              <div id="chart" class="chart-group grabbable">
+                <div class="mps-container xl">
+                  <video id="example_video_1" class="video-js vjs-default-skin" width="100%" height="100%" src="./img/demo.mp4" type='video/mp4' controls autoplay loop />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section">
+            <div class="container">
+              <div class="mps-container xl">
+                <div id="container" class="article-img-flex gallery"></div>
+              </div>
+            </div>
+          </section>
+          <section class="section">
+            <div class="container">
+              <div class="below">
+                <div>
+                  <strong>Data: </strong> 
+                  <a href="https://www.blenderguru.com/tutorials/earth-cycles">Textures</a>, <a href="https://svs.gsfc.nasa.gov/3895">NASA Deep Star Maps</a>, <a href="http://planetpixelemporium.com/earth.html">Planet Texture Maps</a><br />
+                </div>
+                <div>
+                  <strong>Graphics: </strong> @maptheclouds
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
+      </main>
+    </div>
+
+    <script src="../js/d3.v6.min.js"></script>
+
+    <script type="module" src="js/main.js"></script>
+
+  </body>
+
+</html>

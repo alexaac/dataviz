@@ -1,0 +1,99 @@
+/* Page Wrap */
+
+.mps-wrap-flex {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: inset 10px 10px 50px #000;
+
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Page Wrap */
+
+.mps-wrap-flex {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+/* Main */
+
+.mps-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+/* Inner container */
+
+.container {
+  margin: 0 auto;
+  max-width: 992px; /* Medium devices (tablets, 768px and up) */
+}
+
+.container:before,
+.container:after {
+  content: ' ';
+  display: table;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 2;
+}
+
+.container:after {
+  clear: both;
+}
+
+/* Helper containers */
+
+.mps-container {
+  display: block;
+  margin: 0 auto;
+}
+
+.mps-container.bd {
+  border: 1px solid var(--color-neutral-300);
+  padding: 0.5rem;
+}
+
+.mps-container.sm {
+  max-width: 310px;
+}
+
+.mps-container.md {
+  max-width: 620px;
+}
+
+.mps-container.lg {
+  max-width: 1400px;
+}
+
+.mps-page-divider {
+  height: 1px;
+  margin: 3rem -5.375rem 1.5rem;
+  background-color: rgba(138, 152, 158, 0.3);
+}
+
+/* Page breaks after Bootstrap */
+
+@media screen and (max-width: 575.98px) {
+  /* Extra small devices (portrait phones, less than 576px) */
+  .container {
+    max-width: none;
+  }
+}
+
+.container {
+  max-width: 1400px;
+}
