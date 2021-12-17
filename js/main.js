@@ -4,11 +4,8 @@ const div = document.createElement('div');
 div.className = 'article-img-flex';
 imgDiv.appendChild(div);
 
-console.log(imgDiv);
 // Get the data
 d3.json('../data/categories.json').then(function (data) {
-  console.log(data);
-
   data.forEach((elem, i) => {
     if (elem.parent) {
       const div1 = document.createElement('div');
@@ -18,7 +15,7 @@ d3.json('../data/categories.json').then(function (data) {
       div2.className = 'article-img';
 
       const a = document.createElement('a');
-      a.href = `./${elem.name}/`;
+      a.href = `./${elem.parent}/${elem.name}/`;
       const img = document.createElement('img');
       img.src = `./data/${elem.name}.png`;
       img.title = elem.name;

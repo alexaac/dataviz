@@ -3,16 +3,16 @@
     "name": "blender-earth",
     "title": "1. Points",
     "type": "child",
-    "parent": "map-the-clouds",
+    "parent": "maps",
     "icon": "",
     "description": " Earth in Blender ",
     "examples": ["https://www.youtube.com/watch?v=9Q8PwcDzb8Y"],
     "finished": true
   },
   {
-    "title": "MapTheClouds",
+    "title": "MapTheClouds Maps",
     "type": "parent",
-    "name": "map-the-clouds",
+    "name": "maps",
     "description": " MapTheClouds Playground "
   }
 ]
