@@ -8,7 +8,7 @@ Earth in Blender 🌎
 
 ### Demo
 
-[https://maptheclouds.com/playground/maps/blender-earth](https://maptheclouds.com/playground/maps/blender-earth)
+[https://maptheclouds.com/playground/dataviz/blender-earth](https://maptheclouds.com/playground/dataviz/blender-earth)
 
 ### Description
 
