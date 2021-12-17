@@ -146,7 +146,7 @@
 }
 
 .article-img-flex.gallery {
-  max-width: 1400px;
+  max-width: 1200px;
   overflow: auto;
   flex-wrap: nowrap;
   justify-content: initial;
@@ -180,7 +180,7 @@
 .article-img-block.lg {
   margin-top: 2rem;
   padding-top: 1rem;
-  max-width: 1400px;
+  max-width: 1200px;
 }
 
 .article-img {
@@ -217,7 +217,7 @@
 }
 
 .article-text {
-  max-width: 1400px;
+  max-width: 1200px;
   display: block;
   margin: 0 auto;
 }

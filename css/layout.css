@@ -76,6 +76,10 @@
 }
 
 .mps-container.lg {
+  max-width: 1200px;
+}
+
+.mps-container.xl {
   max-width: 1400px;
 }
 
