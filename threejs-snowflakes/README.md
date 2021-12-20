@@ -1,6 +1,6 @@
 ### Project
 
-Star Flakes
+S̶n̶o̶w̶ Star Flakes
 
 ### Title
 
