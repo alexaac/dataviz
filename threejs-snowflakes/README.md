@@ -4,7 +4,7 @@ Star Flakes
 
 ### Title
 
-Here comes the snow! ❄️
+Here comes the snow! ✨❄️✨
 
 ### Demo
 
