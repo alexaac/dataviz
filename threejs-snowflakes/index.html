@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MapTheClouds Playground" />
+    <title>MapTheClouds - ThreeJS Snowflakes</title>
+
+    <link
+      rel="icon"
+      href="https://mps-ph.s3.us-east-2.amazonaws.com/ma/icons/icon.ico"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://mps-ph.s3.us-east-2.amazonaws.com/ma/icons/icon.ico"
+    />
+
+    <meta property="og:title" content="MapTheClouds Playground" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://maptheclouds.com/playground/dataviz/threejs-snowflakes"
+    />
+    <meta property="og:description" content="MapTheClouds Playground" />
+    <meta property="article:publisher" content="https://maptheclouds.com" />
+    <meta property="article:section" content="Graphic" />
+    <meta property="article:tag" content="Graphic" />
+    <meta
+      property="og:image"
+      content="https://mps-ph.s3.us-east-2.amazonaws.com/ma/img/og_1200_630.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1400" />
+    <meta property="og:image:height" content="900" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:image"
+      content="https://mps-ph.s3.us-east-2.amazonaws.com/ma/img/og_1200_630.png"
+    />
+    <meta property="twitter:site" content="@maptheclouds" />
+
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+  </head>
+
+  <body>
+    <div class="mps-wrap-flex">
+      <main class="mps-flex">
+        <div class="title">
+          <h1>Star Flakes</h1>
+          <h2>
+            Here comes the snow! <span>✨❄️✨</span></h2>
+        </div>
+        <div class="description">
+          <!-- <p>a paragraph</p> -->
+        </div>
+        <div id="canvas"></div>
+        <script type="x-shader/x-vertex" id="vertexshader">
+
+          varying vec2 vUv;
+    
+          void main() {
+    
+            vUv = uv;
+    
+            gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+    
+          }
+    
+        </script>
+        <script type="x-shader/x-fragment" id="fragmentshader">
+
+          uniform sampler2D baseTexture;
+          uniform sampler2D bloomTexture;
+    
+          varying vec2 vUv;
+    
+          void main() {
+    
+            gl_FragColor = ( texture2D( baseTexture, vUv ) + vec4( 1.0 ) * texture2D( bloomTexture, vUv ) );
+    
+          }
+    
+        </script>
+        <div class="below">
+          <div>
+            <strong>Data: </strong> 
+            <a href="https://threejs.org/examples/webgl_points_sprites">snowflakes by René Descartes</a><br />
+            <a href="https://threejs.org/examples/webgl_postprocessing_unreal_bloom_selective">postprocessing - unreal bloom selective</a><br />
+
+          </div>
+          <div>
+            <strong>Graphics: </strong> @maptheclouds
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+
+  </body>
+
+</html>
