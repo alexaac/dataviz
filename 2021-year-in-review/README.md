@@ -4,7 +4,7 @@
 
 ### Title
 
-MapTheClouds projects in 2021 🌎
+MapTheClouds projects in 2021 ⏳
 
 ### Demo
 
