@@ -29,6 +29,7 @@ const createBeltScroller = (container, images) => {
 
       const elementLink = document.createElement('a');
       elementLink.href = image;
+      elementLink.target = '_blank';
 
       const elementImage = document.createElement('img');
       elementImage.src = image;
@@ -80,7 +81,6 @@ createBeltScroller(container, [
   'data/8_we_travel_page2.png',
   'data/8_we_travel_page.png',
   'data/10_0_mapchall.png',
-
   'data/10_10_raster_meta.png',
   'data/10_11_3d_meta.png',
   'data/10_12_population_meta.png',
