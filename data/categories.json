@@ -23,6 +23,16 @@
     "finished": true
   },
   {
+    "name": "2021-year-in-review",
+    "title": "2021 - Year in Review",
+    "type": "child",
+    "parent": "dataviz",
+    "icon": "",
+    "description": " MapTheClouds projects in 2021 ",
+    "examples": [],
+    "finished": true
+  },
+  {
     "title": "MapTheClouds Maps",
     "type": "parent",
     "name": "dataviz",
