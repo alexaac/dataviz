@@ -33,6 +33,16 @@
     "finished": true
   },
   {
+    "name": "lotr",
+    "title": "Cluj County",
+    "type": "child",
+    "parent": "dataviz",
+    "icon": "",
+    "description": " Cluj, România map in the 'Lord of the Rings' style 🖤 ",
+    "examples": [],
+    "finished": true
+  },
+  {
     "title": "MapTheClouds Maps",
     "type": "parent",
     "name": "dataviz",
