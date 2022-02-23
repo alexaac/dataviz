@@ -8,8 +8,7 @@ let scene,
   camera,
   renderer,
   clock = new THREE.Clock(),
-  controls,
-  labelRenderer;
+  controls;
 let globalUniforms = {
   time: { value: 0 },
 };
@@ -50,15 +49,9 @@ function init() {
   renderer.setClearColor(0x000);
   container.append(renderer.domElement);
 
-  labelRenderer = new CSS2DRenderer();
-  labelRenderer.setSize(window.innerWidth, window.innerHeight);
-  labelRenderer.domElement.style.position = 'absolute';
-  labelRenderer.domElement.style.top = '0px';
-  document.body.appendChild(labelRenderer.domElement);
-
   window.addEventListener('resize', onWindowResize);
 
-  controls = new OrbitControls(camera, labelRenderer.domElement);
+  controls = new OrbitControls(camera, renderer.domElement);
   controls.enablePan = false;
   controls.minDistance = 6;
   controls.maxDistance = 15;
@@ -196,7 +189,6 @@ function update() {
   globalUniforms.time.value = t;
   controls.update();
   renderer.render(scene, camera);
-  labelRenderer.render(scene, camera);
 }
 
 function onWindowResize() {
@@ -204,5 +196,4 @@ function onWindowResize() {
   camera.updateProjectionMatrix();
 
   renderer.setSize(innerWidth, innerHeight);
-  labelRenderer.setSize(innerWidth, innerHeight);
 }
