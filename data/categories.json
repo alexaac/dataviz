@@ -42,6 +42,17 @@
     "examples": [],
     "finished": true
   },
+
+  {
+    "name": "globe-points",
+    "title": "Globe Points",
+    "type": "child",
+    "parent": "dataviz",
+    "icon": "",
+    "description": " Great points created by @ Paul on CodePen in Three.js 🌎🌍🌏 ",
+    "examples": ["https://codepen.io/prisoner849/pen/oNopjyb"],
+    "finished": true
+  },
   {
     "title": "MapTheClouds Maps",
     "type": "parent",
