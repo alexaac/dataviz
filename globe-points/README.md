@@ -8,7 +8,7 @@ Globe points 🌎🌍🌏
 
 ### Demo
 
-[https://maptheclouds.com/playground/dataviz/chart-types](https://maptheclouds.com/playground/dataviz/chart-types)
+[https://maptheclouds.com/playground/dataviz/globe-points](https://maptheclouds.com/playground/dataviz/globe-points)
 
 ### Description
 
