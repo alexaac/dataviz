@@ -12,7 +12,7 @@ Distance between cities
 
 ### Description
 
-Calculate travelling distances. 🛣️
+Calculate traveling distances. 🛣️
 
 ### Data sources
 
