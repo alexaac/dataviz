@@ -65,7 +65,7 @@
   },
   {
     "name": "google-routes",
-    "title": "Google Rou",
+    "title": "Google Routes",
     "type": "child",
     "parent": "dataviz",
     "icon": "",
