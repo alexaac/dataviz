@@ -60,8 +60,8 @@ window.initMap = function () {
     directionsService.route(request, function (result, status) {
       if (status === google.maps.DirectionsStatus.OK) {
         document.getElementById('route-info').innerHTML = `
-        The travelling distance is ${result.routes[0].legs[0].distance.text}.<br/>
-        The travelling time is ${result.routes[0].legs[0].duration.text}.
+        The traveling distance is ${result.routes[0].legs[0].distance.text}.<br/>
+        The traveling time is ${result.routes[0].legs[0].duration.text}.
 
         `;
         directionsDisplay.setDirections({ routes: [] });
