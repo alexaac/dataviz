@@ -1,0 +1,37 @@
+/**
+ * Cover
+ */
+
+.cover {
+  position: relative;
+
+  padding: 15% 0;
+  background-image: $cover_image;
+  background-position: $cover_image_position;
+  background-size: $cover_image_size;
+  background-repeat: $cover_image_repeat;
+  background-attachment: $cover_image_attachment;
+
+  z-index: 1;
+
+  h1 {
+    /* Media Queries */
+    @media only screen and (max-width: $tablet) {
+      font-size: 30px;
+    }
+  }
+}
+
+.cover::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  content: '';
+  z-index: 5;
+  background: $color-main-grad;
+  opacity: $color_intro_overlay_opacity;
+  background-position: $cover_image_position;
+  background-size: $cover_image_size;
+}

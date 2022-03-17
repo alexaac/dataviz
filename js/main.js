@@ -15,7 +15,11 @@ d3.json('data/categories.json').then(function (data) {
       div2.className = 'article-img';
 
       const a = document.createElement('a');
-      a.href = `https://maptheclouds.com/playground/dataviz/${elem.name}/`;
+      if (elem.name === 'google-routes') {
+        a.href = `https://maptheclouds.com/playground/dataviz/${elem.name}/dist/`;
+      } else {
+        a.href = `https://maptheclouds.com/playground/dataviz/${elem.name}/`;
+      }
       const img = document.createElement('img');
       img.src = `./data/${elem.name}.png`;
       img.title = elem.name;

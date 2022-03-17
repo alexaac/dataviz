@@ -1,0 +1,146 @@
+/**
+ * Design
+ */
+
+.navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 110px;
+  left: 0;
+  width: 300px;
+  height: 62%;
+  margin-bottom: 110px;
+  border-right: solid;
+  border-color: $color-accent;
+  padding-top: 1rem;
+}
+
+.nav-list {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.nav-list li {
+  color: $color-neutral-500;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+.navbar h4 {
+  line-height: 0;
+}
+
+.navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: $color-neutral-500;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.we-doc {
+  padding: 20px;
+  margin: 0 0 110px 310px;
+  display: flex;
+  flex-direction: column;
+}
+
+.we-doc p {
+  max-width: 1000px;
+}
+
+.we-section article {
+  color: $color-neutral-500;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+.we-section .back {
+  display: inline-block;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.we-section li {
+  margin: 15px 0px 0px 20px;
+}
+
+.items-group-columns {
+  display: flex;
+  flex-direction: column;
+}
+
+.items-group-rows {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.items-item {
+  margin: 0.2rem;
+}
+
+.items-img {
+  width: 6rem;
+  height: 6rem;
+  background-size: cover;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 20%;
+  border-color: $color-neutral-300;
+}
+
+/* Media */
+
+@media (min-width: $tablet) and (max-width: $desktop) {
+  /* Medium devices (tablets, $tablet and up) */
+  .we-doc {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  /* Extra small and small devices */
+  .nav-list {
+    border: 1px solid;
+    height: 207px;
+    margin-top: 40px;
+  }
+
+  .navbar {
+    background-color: $color-neutral-200;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  .we-doc {
+    position: relative;
+    margin-left: 0;
+    margin-top: 280px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  /* Extra small devices (portrait phones, less than 576px) */
+  .we-doc {
+    margin-left: -10px;
+  }
+
+  .we-section code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px 45px 0 10px;
+    min-width: 233px;
+  }
+}

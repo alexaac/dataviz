@@ -1,0 +1,25 @@
+/**
+ * To top
+ */
+
+#top-btn {
+  position: fixed;
+  bottom: 20px;
+  float: right;
+  right: 10px;
+  max-width: 30px;
+  width: 100%;
+  font-size: 12px;
+  color: $color-neutral-100;
+  background-color: $color-accent;
+  border-color: $color-neutral-100;
+  padding: 0.5px;
+  border-radius: 4px;
+  z-index: 1;
+  opacity: 1;
+  cursor: pointer;
+}
+
+#top-btn:hover {
+  background-color: $color-primary;
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="WE Travel - Trip Planner" />
+
+    <title>WE Travel</title>
+
+    <meta property="og:title" content="WE Travel - Trip Planner" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://maptheclouds.com/playground/dataviz/lotr/dist"
+    />
+    <meta property="og:description" content="WE Travel - Trip Planner" />
+    <meta
+      property="article:publisher"
+      content="https://maptheclouds.com/playground/dataviz/lotr/dist"
+    />
+    <meta property="article:section" content="Graphic" />
+    <meta property="article:tag" content="Graphic" />
+    <meta
+      property="og:image"
+      content="https://maptheclouds.com/playground/dataviz/lotr/img/og_1400_900.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1400" />
+    <meta property="og:image:height" content="900" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:image"
+      content="https://maptheclouds.com/playground/dataviz/lotr/img/og_1400_900.png"
+    />
+    <meta property="twitter:site" content="@maptheclouds" />
+
+    <link
+      rel="icon"
+      href="https://mps-ph.s3.us-east-2.amazonaws.com/we/media/icon.ico"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://mps-ph.s3.us-east-2.amazonaws.com/we/media/icon.ico"
+    />
+  </head>
+
+  <body>
+    <div class="we-wrap-flex">
+      <header class="header">
+        <div class="nav-flex">
+          <div class="nav-brand">
+            <a class="nav-brand-link" href="#">
+              <!-- Motorcycle by leo-graph.com from the Noun Project -->
+              <img
+                src="https://mps-ph.s3.us-east-2.amazonaws.com/we/media/wemoto_white.svg"
+                alt="We Travel brand logo"
+                class="nav-brand"
+            /></a>
+          </div>
+
+          <nav id="navbar-collapse" role="navigation" class="nav-menu-flex">
+            <div id="navbar-collapse-wrap" class="nav-menu-wrap">
+              <div
+                role="list"
+                class="nav-menu-list-flex collapse navbar-collapse"
+              >
+                <div role="listitem" class="nav-menu-item">
+                  <a href="#" class="nav-link we-link">WE Travel</a>
+                </div>
+                <div role="listitem" class="nav-menu-item">
+                  <a href="./trips.html" class="nav-link we-link">Trips</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <button
+            class="nav-mobile-button navbar-toggler"
+            type="button"
+            id="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbar-collapse"
+            aria-controls="navbar-collapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span></span> <span></span> <span></span> <span></span>
+          </button>
+          <div class="nav-menu-wrap nav-right">
+            <div role="list" class="nav-menu-list-flex">
+              <div role="listitem" class="nav-menu-item">
+                <a href="#" class="nav-link we-link">Login</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="we-flex">
+        <div class="we-title">
+          <h1>Distance between cities 🛣️</h1>
+          <p><strong>Calculate travelling distances.</strong></p>
+        </div>
+
+        <section class="section">
+          <div class="we-wide">
+            <div class="we-flex-rows">
+              <div class="we-flex-col">
+                <label for="from-input" class="we-wide-label helper-text"
+                  >From:</label
+                >
+                <input
+                  type="text"
+                  class="we-input"
+                  id="from-input"
+                  placeholder="Origin"
+                  value="Cluj-Napoca"
+                />
+              </div>
+              <div class="we-flex-col">
+                <label for="to-input" class="we-wide-label helper-text"
+                  >To:</label
+                >
+                <input
+                  type="text"
+                  class="we-input"
+                  id="to-input"
+                  placeholder="Destination"
+                  value="Timisoara"
+                />
+              </div>
+              <div class="we-flex-col">
+                <button
+                  id="create-route"
+                  class="we-btn we-btn-primary we-btn-lg"
+                >
+                  Start
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div id="route-info" class="we-route-info"></div>
+          <div class="color-neutral-100 color-error-bk error" id="error"></div>
+        </section>
+        <section class="section">
+          <div id="map"></div>
+        </section>
+        <img
+          src="https://mps-ph.s3.us-east-2.amazonaws.com/we/media/eleonore-kemmel-Q8JuPozm4s0-unsplash.jpg"
+          loading="lazy"
+          alt=""
+          class="we-wide-bg"
+        />
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner-flex">
+          <div class="footer-inner-flex-2">
+            © WE Travel 2021
+            <a href="#" class="footer-link we-link">Terms</a>
+            <a href="#" class="footer-link we-link">Privacy</a>
+          </div>
+          <div class="we-social-grid">
+            <a
+              href="https://www.github.com/WETravel"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="we-social"
+            >
+              <img
+                src="https://mps-ph.s3.us-east-2.amazonaws.com/we/media/github.svg"
+                alt="GitHub"
+              />
+            </a>
+
+            <a
+              href="https://www.facebook.com/WETravel"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="we-social"
+              aria-label="facebook page ex 1"
+            >
+              <img
+                src="https://mps-ph.s3.us-east-2.amazonaws.com/we/media/facebook.svg"
+                alt="Facebook"
+              />
+            </a>
+
+            <a
+              href="https://twitter.com/WETravel"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="we-social"
+              aria-label="twitter page ex 1"
+            >
+              <img
+                src="https://mps-ph.s3.us-east-2.amazonaws.com/we/media/twitter.svg"
+                alt="Twitter"
+              />
+            </a>
+
+            <a
+              href="https://www.linkedin.hcom/WETravel"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="we-social"
+              aria-label="linkedin page ex 1"
+            >
+              <img
+                src="https://mps-ph.s3.us-east-2.amazonaws.com/we/media/linkedin.svg"
+                alt="Linkedin"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Check that service workers are supported
+      if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }
+    </script>
+  </body>
+</html>

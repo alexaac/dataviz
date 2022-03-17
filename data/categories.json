@@ -54,6 +54,26 @@
     "finished": true
   },
   {
+    "name": "ukraine-feelings",
+    "title": "Ukraine Feelings",
+    "type": "child",
+    "parent": "dataviz",
+    "icon": "",
+    "description": " 💛💙 ",
+    "examples": [],
+    "finished": true
+  },
+  {
+    "name": "google-routes",
+    "title": "Google Rou",
+    "type": "child",
+    "parent": "dataviz",
+    "icon": "",
+    "description": " Calculate travelling distances. 🛣️ ",
+    "examples": [],
+    "finished": true
+  },
+  {
     "title": "MapTheClouds Maps",
     "type": "parent",
     "name": "dataviz",

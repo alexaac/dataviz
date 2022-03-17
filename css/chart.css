@@ -41,3 +41,11 @@
 .chart-group {
   margin-top: 3rem;
 }
+
+.fire {
+  stroke: firebrick;
+}
+
+.nodes:hover {
+  stroke: firebrick;
+}

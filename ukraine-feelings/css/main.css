@@ -1,0 +1,9 @@
+.boundary {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1px;
+}
+
+.counties {
+  border: 2px solid grey;
+}

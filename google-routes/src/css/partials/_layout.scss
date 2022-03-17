@@ -1,0 +1,152 @@
+/**
+ * Layout
+ */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  color: $font-color;
+  background-color: $color-neutral-200;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.title {
+  color: $color-accent;
+}
+
+/* Page Wrap */
+
+.we-wrap-flex {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* Main */
+
+.we-flex {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.we-flex-rows {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1;
+}
+/* Inner container */
+
+.container {
+  margin: 0 auto;
+  max-width: $desktop; /* Medium devices (tablets, $tablet and up) */
+}
+
+.container:before,
+.container:after {
+  content: ' ';
+  display: table;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 2;
+}
+
+.container:after {
+  clear: both;
+}
+
+/* Helper containers */
+
+.we-container {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.we-container.expired {
+  background-color: $color-neutral-300;
+}
+
+.we-container.bd {
+  border: 1px solid $color-neutral-300;
+  padding: 0.5rem;
+}
+
+.we-container.sm {
+  max-width: 310px;
+}
+
+.we-container.md {
+  max-width: 620px;
+}
+
+.we-container.lg {
+  max-width: 1000px;
+}
+
+.we-page-divider {
+  height: 1px;
+  margin: 3rem -5.375rem 1.5rem;
+  background-color: rgba(138, 152, 158, 0.3);
+}
+
+/* Page breaks after Bootstrap */
+
+@media screen and (max-width: $mobile) {
+  /* Extra small devices (portrait phones, less than 576px) */
+  .container {
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .we-container {
+    max-height: initial;
+  }
+}
+
+@media (min-width: $tablet) and (max-width: $desktop) {
+  /* Medium devices (tablets, $tablet and up) */
+  .container {
+    max-width: 728px;
+  }
+}
+
+@media (min-width: $desktop) and (max-width: $large) {
+  /* Large devices (desktops, $desktop and up) */
+  .container {
+    max-width: $desktop;
+  }
+}
+
+@media (min-width: $large) {
+  /* Extra large devices (large desktops, $large and up) */
+
+  .container {
+    max-width: $large;
+  }
+}
+
+.container {
+  max-width: $desktop;
+}

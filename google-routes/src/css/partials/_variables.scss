@@ -1,0 +1,207 @@
+/**
+ * Variables
+ *
+ * The configuration for the app.
+ */
+
+/* Breakpoints */
+$x-small: 576px !default;
+$small: 768px !default;
+$medium: 992px !default;
+$large: 1200px !default;
+$x-large: 1440px !default;
+
+$mobile: $x-small !default;
+$tablet: $small !default;
+$desktop: $medium !default;
+
+/* Main colors*/
+
+/* primary colors */
+$color-primary: #162945;
+$color-primary-hover: #01545e;
+$color-accent: #f61708;
+$color-accent-hover: #8a0d04;
+
+/* neutral colors */
+$color-neutral-100: #fff;
+$color-neutral-200: #f2f2f2;
+$color-neutral-300: #d7d7d7;
+$color-neutral-400: #4d4e53;
+$color-neutral-500: #162945;
+$color-neutral-600: #000;
+
+/* secondary colors */
+$color-secondary: #006fc2;
+$color-secondary-light: #1c77c6;
+$color-secondary-transp: rgba(10, 102, 201, 0.2);
+
+/* tertiary colors */
+$color-success: #4a8231;
+$color-success-hover: #1b3609;
+$color-warning: #8b7306;
+$color-warning-hover: #503a04;
+$color-error: #d9394d;
+$color-error-hover: #860b19;
+
+/* Gradient */
+$color-main-grad: linear-gradient(
+    45deg,
+    var(--color-primary-dark) 0%,
+    hsla(190, 95%, 43%, 0) 70%
+  ),
+  linear-gradient(
+    135deg,
+    var(--color-primary-darker) 10%,
+    hsla(219, 93%, 48%, 0) 80%
+  ),
+  linear-gradient(
+    225deg,
+    var(--color-secondary-darker) 10%,
+    hsla(293, 93%, 48%, 0) 80%
+  ),
+  linear-gradient(
+    315deg,
+    var(--color-secondary-dark) 100%,
+    hsla(130, 96%, 45%, 0) 70%
+  );
+
+/* Typography */
+
+@font-face {
+  font-family: 'dejavu';
+  src: local('../fonts/DejaVuSerif.ttf');
+}
+
+.sacramento {
+  font-family: 'dejavu';
+}
+
+@font-face {
+  font-family: 'sourcesans';
+  src: local('../fonts/SourceSansPro-RyPo.ttf');
+}
+
+.sacramento {
+  font-family: 'dejavu';
+}
+
+$font-family: 'sourcesans', 'Arial', sans-serif;
+$font-family-title: 'dejavu', cursive;
+$font-color: #4d4e53 !default;
+$font-color-inverted: #fff !default;
+$font-size: 1rem !default;
+$font-weight: 400 !default;
+$line-height: 1.5 !default;
+
+/* images */
+// Photo by Eléonore Kemmel on Unsplash
+$cover_image: url(https://mps-ph.s3.us-east-2.amazonaws.com/we/media/eleonore-kemmel-Q8JuPozm4s0-unsplash.jpg);
+$cover_image_position: 50% 50%;
+$cover_image_size: cover;
+$cover_image_repeat: repeat;
+$cover_image_attachment: scroll;
+$cover_image_opacity: 0.15;
+$color_intro_overlay_opacity: 0.6;
+
+/* Colors*/
+
+.color-primary {
+  color: $color-primary;
+}
+
+.color-primary-bk {
+  background-color: $color-primary;
+}
+
+.color-accent {
+  color: $color-accent;
+}
+
+.color-accent-bk {
+  background-color: $color-accent;
+}
+
+.color-neutral-200 {
+  color: $color-neutral-200;
+}
+
+.color-neutral-200-bk {
+  background-color: $color-neutral-200;
+}
+
+.color-neutral-100 {
+  color: $color-neutral-100;
+}
+
+.color-neutral-100-bk {
+  background-color: $color-neutral-100;
+}
+
+.color-neutral-500 {
+  color: $color-neutral-500;
+}
+
+.color-neutral-500-bk {
+  background-color: $color-neutral-500;
+}
+
+.color-neutral-600 {
+  color: $color-neutral-600;
+}
+
+.color-neutral-600-bk {
+  background-color: $color-neutral-600;
+}
+
+.color-secondary {
+  color: $color-secondary;
+}
+
+.color-secondary-light {
+  color: $color-secondary-light;
+}
+
+.color-secondary-bk {
+  background-color: $color-secondary;
+}
+
+.color-neutral-400 {
+  color: $color-neutral-400;
+}
+
+.color-neutral-400-bk {
+  background-color: $color-neutral-400;
+}
+
+.color-neutral-300 {
+  color: $color-neutral-300;
+}
+
+.color-neutral-300-bk {
+  background-color: $color-neutral-300;
+}
+
+.color-success {
+  color: $color-success;
+}
+
+.color-success-bk {
+  background-color: $color-success;
+}
+
+.color-warning {
+  color: $color-warning;
+}
+
+.color-warning-bk {
+  background-color: $color-warning;
+}
+
+.color-error {
+  color: $color-error;
+}
+
+.color-error-bk {
+  background-color: $color-error;
+}
